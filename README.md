@@ -65,7 +65,7 @@ $ php artisan migrate:fresh --seed
 *Please provide value for keys in Path variable .
 
 
-###Logic behind Timezone
+### Logic behind Timezone
 Timezone has been converted to string by using ```base64_decode($timezone);```. This helps to use in our API.
 
 [bae64encoder link](https://www.base64encode.org/)
