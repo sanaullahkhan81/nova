@@ -64,6 +64,7 @@ $ php artisan migrate:fresh --seed
 ```
 
 *Note: Please change and provide new values for keys in Path variable .
+![alt text](https://github.com/sanaullahkhan81/nova/blob/master/Capture1.JPG)
 
 
 ### Logic behind Timezone
