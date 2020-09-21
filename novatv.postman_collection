@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "a158b0bd-787c-40ac-9dbb-3a8cb96fa394",
+		"name": "nova",
+		"description": "Testing nova api's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List of Channels",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/channels",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channels"
+					]
+				},
+				"description": "Get list of channels\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "List of Programme with Timetable",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/programmeTimetable",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"programmeTimetable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Programm Information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/programmeInformation",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"programmeInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Programme Channel for given date and timezone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/channels/:channel_id/:date/timezone/:timezone",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channels",
+						":channel_id",
+						":date",
+						"timezone",
+						":timezone"
+					],
+					"variable": [
+						{
+							"key": "channel_id",
+							"value": "0aec2aa4-f5d0-49ed-83fc-80e66868985d"
+						},
+						{
+							"key": "date",
+							"value": "2020-09-24"
+						},
+						{
+							"key": "timezone",
+							"value": "QXNpYS9Lb2xrYXRh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Programme information for a selected programme",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/channels/:channel-id/programmes/:progarmme_id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"channels",
+						":channel-id",
+						"programmes",
+						":progarmme_id"
+					],
+					"variable": [
+						{
+							"key": "channel-id",
+							"value": "0aec2aa4-f5d0-49ed-83fc-80e66868985d"
+						},
+						{
+							"key": "progarmme_id",
+							"value": "094480ba-13fb-4143-8361-9d566e91de1c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
