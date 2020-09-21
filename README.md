@@ -53,6 +53,7 @@ $ php artisan serve
 ### Postman Interaction with API
 Postman File is in the root folder as ```novatv.postman_collection```
 
+
 Note: Always Migrate & Seed database while using postman, as uuid are not static they change on fresh migration
 
 ```
@@ -62,7 +63,7 @@ or to completely rebuild your database
 $ php artisan migrate:fresh --seed 
 ```
 
-*Please provide value for keys in Path variable .
+*Note: Please change and provide new values for keys in Path variable .
 
 
 ### Logic behind Timezone
