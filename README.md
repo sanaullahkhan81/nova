@@ -66,7 +66,7 @@ $ php artisan migrate:fresh --seed
 
 
 ### Logic behind Timezone
-Assuming timezone is associated with user login session, and its in base64 format.
+Assuming timezone is associated with user login session, and its saved in base64 format.
 
 Timezone has been converted to string by using ```base64_decode($timezone);```. This helps to use in our API.
 
